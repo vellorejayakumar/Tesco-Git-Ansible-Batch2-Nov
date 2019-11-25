@@ -109,15 +109,16 @@ git init
 
 Step 2 - Create a file using IDE
 
-Step 3 - Add a file to git
+Step 3 - Add a file to git[Adding a file from working to stage]
 git add file1.txt
 
 -----------------------------------
 git config user.name "Rajesh Kumar"
 git config user.email "devops@rajeshkumar.xyz"
 git config --list
+-------.git/config-----------------
 -----------------------------------
-Step 4 - Commit a file to Git.
+Step 4 - Commit a file to Git. [ Staging to Repo]
 git commit -m"Adding my first file"
 
 Step 5 - See the commited file
@@ -125,6 +126,125 @@ git log
 
 Step 6 - See what has been commited.
 git show commit-id
+
+-----------------
+navnavchd08
+abhishek086
+harikrishnankutteri
+Veekshith1991
+gdineshdk
+ranjeethakki
+balachsm
+mandara70
+anil-git1
+
+http://bit.ly/2OgjBMI
+=======================
+config
+        SYSTEM
+
+
+
+
+$ git log
+commit 47c7c06fb09cbfa36dc5a0c6c832079a1eff47ed (HEAD -> master)
+Author: Rajesh Kumar <devops@rajeshkumar.xyz>
+Date:   Mon Nov 25 15:23:41 2019 +0530
+
+    Adding my first file
+
+47c7c06fb09cbfa36dc5a0c6c832079a1eff47ed 
+    UUID by SHA1 - CHECKSUM
+    commit id - 40 - 7
+
+===========================================
+git status
+==========================================
+How to add multiple files?
+How to commit selective not all
+How to edit and modify a file ?
+How to creare a dir?
+how to rename a file
+How to move a file?
+How to delete a file?
+
+ 502  ls
+  503  ls
+  504  vi file1.txt
+  505  git status
+  506  git add .
+  507  git status
+  508  git commit -m"adding"
+  509  clear
+  510  git status
+  511  ls
+  512  clear
+  513  mkdir src
+  514  git status
+  515  ls
+  516  touch src/filex
+  517  git status
+  518  git add .
+  519  git status
+  520  git commit -m"addng dir"
+  521  git status
+  522  git log
+  523  clear
+  524  ls
+  525  git status
+  526  mv file1.txt
+  527  mv file1.txt file11.txt
+  528  git status
+  529  git add .
+  530  git status
+  531  ls
+  532  git mv file2.txt file22.txt
+  533  git status
+  534  git commit -m"rename"
+  535  ls
+  536  clear
+  537  ls
+  538  git mv file3.txt src/
+  539  git status
+  540  git commit -m"moving"
+  541  clear
+  542  ls
+  543  clear
+  544  clear
+  545  git log
+  546  clear
+  547  git log --oneline
+  548  ls
+  549  git rm file5.txt
+  550  git status
+  551  git commit -m"deleting"
+  552  git log --oneline
+  553  ls
+  554  git checkout da869c5
+  555  clear
+  556  ls
+  557  git checkout master
+  558  clear
+  559  ls
+  560  ls
+  561  history
+
+
+
+How to undo?
+git config
+Branching and Merging
+Working with remote repo?
+
+
+
+
+
+
+
+
+
+
 
 
 
