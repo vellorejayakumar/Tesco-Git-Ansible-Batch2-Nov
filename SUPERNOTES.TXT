@@ -479,6 +479,38 @@ Merging Scanario
 
 
 git config
+    SYSTEM - 
+        C:\tools\Git\etc\gitconfig
+    GLOBAL
+        C:\Users\Rajesh Kumar
+    REPO=LOCAL
+        .git/config
+=============================
+Conflict Resolution
+RESET 
+    SOFT
+    MIXED
+    HARD
+
+====================================
+Video 
+https://www.youtube.com/channel/UCrXr49kBvXJeQMMl2693c4g
+
+Slides
+https://www.devopsschool.com/slides
+https://www.devopsschool.com/pdf
+
+Tutotials
+https://www.devopsschool.com/tutorial/git
+
+Blogs
+https://www.devopsschool.com/blog
+
+Notes
+https://github.com/devopsschool-lab-exercise/Tesco-Git-Ansible-Batch2-Nov
+
+Quiz
+https://www.devopsschool.com/lms
 
 
 
