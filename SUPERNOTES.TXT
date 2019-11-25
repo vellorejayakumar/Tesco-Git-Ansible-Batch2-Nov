@@ -1,0 +1,138 @@
+Tesco-Git-Ansible-Batch2-Nov
+http://bit.ly/2KbWznX
+=================================
+Prod - TescoX
+Mgmr - Mgrx
+-------------------
+     - EACH COMMIT SHOULD GO TO PRODUCTION.
+     - Quality REDEFINED
+                -------
+     - Cost Reduction
+-----------------------------
+        DEVOPS
+https://www.youtube.com/watch?v=-VaVmb_UOC8
+================================================
+Hiring 
+------------------
+Architect - JIRA -> Confulence
+15 DEV - 15 MODULE
+    Code Integ - Git
+    Code Review
+            Peer Code Review - Gerrit
+            Static Code Review - SonarQube
+Build mgmt --- Maven - MSBUild,
+Unit Testing - Junit - NUNIT
+Packaging -
+            APP
+            SYS
+Archiving - Nexus 
+----------------------------------------
+Deployment 2 
+                QA
+                Staging
+                PRE PROD
+--------------------------------------------
+TescoX55.6 -- 100 SERVER 
+-------------------------------------
+           50 LINUX 50 WINDOWS
+           50 APACHE 50 NGINX
+           25 TOM 25 JBOS 25 WS 26 WL
+           25 MYSQL 25 MS 25 OR 25 PS
+           -----------------------------
+           1 Deployment - 9 mins....
+           100 Dep ---> 9 mins.
+           -------------------------
+            Parrell Deployment....
+PROGRAMMING - Ansible -> Puppet -> Chef -> Salt -> Cfengine
+GUI - Octopus Deploy --> UDeploy 
+====================================
+AT
+
+Code Coverage - 
+===================================================================
+                        CI
+Plan -> Code -> Code Review -> Build -> UT - > ARCHIVE ->Dep2qa ->AT - CC
+=======================================================================
+JIRA _ GIT - SOanr- Maven - JUNIT -jar-Nexus----Ansible - Sel - Jacoco
+==========================================================================
+                            JENKINS
+                    -------------------------
+                    Scheduling
+                    Dashboarding
+                    Notification
+                    =====================
+https://www.devopsschool.com/path/
+==========================================================
+What is Git?
+        Versioning tool
+                WHO
+                WHEN
+                What
+                WHERE
+                WHY?
+        Source Code mgmt tool
+        ----------
+        GIT IS DISTRIBUTED.
+        ----------------
+        FREE
+        OPEN Source
+        Dev by Linus Tovarld
+
+Why GIt?
+        WHO
+        WHEN
+        What
+        WHERE
+        WHY?
+
+Other tool
+RCS -> CVS -> SVN -> Git
+HARVEST -> VSS -> ClearCase -> perforce -> Mercury
+
+====================================================
+SERVER-CLIENT VS DISTRIBUTED
+----------------------------------------------------
+RCS -> CVS -> SVN 
+HARVEST -> VSS -> ClearCase -> perforce -> Mercury
+=======================================
+How to install git?
+    Windows - git-scm.com
+                using EXE - git bash
+    RHEL - sudo yum install git
+    UB - sudo apt-get install git
+    Mac - git-scm.com - DMG - 
+======================================
+Basic workflow to work with git?
+------------------------------
+Step 1 - Create a repo
+git init
+
+Step 2 - Create a file using IDE
+
+Step 3 - Add a file to git
+git add file1.txt
+
+-----------------------------------
+git config user.name "Rajesh Kumar"
+git config user.email "devops@rajeshkumar.xyz"
+git config --list
+-----------------------------------
+Step 4 - Commit a file to Git.
+git commit -m"Adding my first file"
+
+Step 5 - See the commited file
+git log
+
+Step 6 - See what has been commited.
+git show commit-id
+
+
+
+
+
+
+
+
+
+
+
