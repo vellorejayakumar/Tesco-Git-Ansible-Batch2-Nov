@@ -276,15 +276,100 @@ How to undo?
   602  ls
   603  history
   604  history
+===========================
+WHAT IS HEAD - 
+        HEAD -> master
+        IS A TIP OF CURR BRANCH.
+              NOT A TOP OF CURR BRANCH
+WHAT IS BRANCH -
+        is TOP COMMIT OF THE DEV LINE.
+
+================================
+Working with remote repo?
+==================================  
+git pull karan@ipadd:/opt/.git
+git push karan@ipadd:/opt/.git
+
+Github      FREE(Community)     PAID         
+                                CLOUD       BEHIND FIREWALL
+gitlab
+bitbucket
+Gerrit
+--------------------------------
+ 485  git push https://github.com/devopsschool-lab-exercise/tesco-demo.git master
+  486  cd ..
+  487  clear
+  488  ls
+  489  git clone https://github.com/devopsschool-lab-exercise/tesco-demo.git
+  490  clear
+  491  ls
+  492  cd tesco-demo/
+  493  clear
+  494  ls
+  495  touch diffguy.txt;git add .;git commit -m"diff guy"
+  496  git config user.name "Rajesh Kumar"
+  497  git config user.email "devops@rajeshkumar.xyz"
+  498  touch diffguy.txt;git add .;git commit -m"diff guy"
+  499  git push origin master
+  500  cd /e
+  501  cls
+  502  clear
+  503  ls
+  504  cd tesco/
+  505  clear
+  506  ls
+  507  cd tesco-demo/
+  508  clear
+  509  ls
+  510  git push origin master
+  511  git push origin master
+  512  clear
+  513  history
 
 
-
-
+85  git push https://github.com/devopsschool-lab-exercise/tesco-demo.git master
+  486  cd ..
+  487  clear
+  488  ls
+  489  git clone https://github.com/devopsschool-lab-exercise/tesco-demo.git
+  490  clear
+  491  ls
+  492  cd tesco-demo/
+  493  clear
+  494  ls
+  495  touch diffguy.txt;git add .;git commit -m"diff guy"
+  496  git config user.name "Rajesh Kumar"
+  497  git config user.email "devops@rajeshkumar.xyz"
+  498  touch diffguy.txt;git add .;git commit -m"diff guy"
+  499  git push origin master
+  500  cd /e
+  501  cd tesco/
+  502  clear
+  503  ls
+  504  cd repo1/
+  505  ls
+  506  git remote add origin https://github.com/devopsschool-lab-exercise/tesco-demo.git]
+  507  git push origin master
+  508  git help remote
+  509  git remote remove origin
+  510  git remote add origin https://github.com/devopsschool-lab-exercise/tesco-demo.git
+  511  git push origin mast
+  512  git push origin master
+  513  git pull origin master
+  514  ls
+  515  git push origin master
+  516  clear
+  517  ls
+  518  cd ..
+  519  ls
+  520  cd clear
+  521  clear
+  522  history
 
 
 git config
 Branching and Merging
-Working with remote repo?
+
 
 
 
