@@ -366,9 +366,119 @@ Gerrit
   521  clear
   522  history
 
+====================================
+Branching and Merging
+
+
+TYPES OF BRANCHES
+----------------------
+Local Branch - READ - WRITE
+Remote Branch - READ ONLY 
+Temp Branch - READ - WRITE BUT NOT RECOMMENDED
+
+
+PULL --- FETCH + MergE
+536  ls
+  537  git clone https://github.com/devopsschool-lab-exercise/tesco-demo user1
+  538  git clone https://github.com/devopsschool-lab-exercise/tesco-demo user2
+  539  clear
+  540  ls
+  541  cd user2/
+  542  clear
+  543  ls
+  544  git config user.email "devops@rajeshkumar.xyz"
+  545  git config user.name "Rajesh Kumar"
+  546  clear
+  547  ls
+  548  ls
+  549  ls
+  550  touch user2.txt
+  551  clear
+  552  ls
+  553  ls
+  554  git branch -a
+  555  git fetch origin master
+  556  ls
+  557  git branch -a
+  558  git checkout remotes/origin/master
+  559  ls
+  560  git status
+  561  ls
+  562  git g
+  563  git checkout master
+  564  git branch
+  565  pwd
+  566  clear
+  567  ls
+  568  git branch -a
+  569  git merge remotes/origin/master
+  570  ls
+  571  history
+
+
+Merging Scanario
+========================
+3 merging Scanario
+- FAST FORWARD
+- Recusrive
+- Cherry Picking
+
+ 498  git clone https://github.com/devopsschool-lab-exercise user1
+  499  git clone https://github.com/devopsschool-lab-exercise user2
+  500  cd /e/tesco/
+  501  ls
+  502  cd user1
+  503  clear
+  504  ls
+  505  touch user1.txt;git add .;git commit -m"adding user1";git push origin master
+  506  git config user.name "Rajesh Kumar"
+  507  git config user.email "devops@rajeshkumar.xyz"
+  508  clear
+  509  ls
+  510  touch user1.txt;git add .;git commit -m"adding user1";git push origin master
+  511  clear
+  512  ls
+  513  touch recur1.txt;git add .;git commit -m"adding recur1"
+  514  git branch1
+  515  git branch1
+  516  git branch
+  517  clear
+  518  git checkout fea1
+  519  git checkout -b fea1
+  520  touch fea1.txt;git add .;git commit -m"adding fea1.txt"
+  521  touch fea2.txt;git add .;git commit -m"adding fea2.txt"
+  522  clear
+  523  git checkout master
+  524  touch recur2.txt;git add .;git commit -m"adding recur2"
+  525  clear
+  526  ls
+  527  touch recur3.txt;git add .;git commit -m"adding recur3"
+  528  git checkout fea1
+  529  touch fea3.txt;git add .;git commit -m"adding fea3.txt"
+  530  clear
+  531  git log --oneline
+  532  git diff master
+  533  git checkout
+  534  git checkout master
+  535  git diff fea1
+  536  clear
+  537  ls
+  538  git merge fea1
+  539  git log --oneline
+  540  git checkout fea1
+  541  touch cherry1.txt;git add .;git commit -m"adding cherrry1.txt"
+  542  touch cherry2.txt;git add .;git commit -m"adding cherrry2.txt"
+  543  touch cherry3.txt;git add .;git commit -m"adding cherrry3.txt"
+  544  touch cherry4.txt;git add .;git commit -m"adding cherrry4.txt"
+  545  git log --oneline
+  546  git checkout master
+  547  ls
+  548  git cherry-pick 3b8b0fe
+  549  ls
+  550  history
+
 
 git config
-Branching and Merging
 
 
 
