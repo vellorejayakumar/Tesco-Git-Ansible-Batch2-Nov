@@ -229,9 +229,59 @@ How to delete a file?
   560  ls
   561  history
 
-
+=================================================
 
 How to undo?
+ 561  history
+  562  clear
+  563  git status
+  564  touch clean.txt
+  565  git status
+  566  clear
+  567  git status
+  568  git clean -f -d
+  569  git status
+  570  touch reset.txt
+  571  clear
+  572  git statis
+  573  git status
+  574  git add .
+  575  clear
+  576  git status
+  577  git reset reset.txt
+  578  git status
+  579  git clean -f -d
+  580  clear
+  581  ls
+  582  ls
+  583  touch fdfd
+  584  git clean
+  585  git clean -d
+  586  git clean -d -f
+  587  clear
+  588  ls
+  589  touch revert.txt
+  590  git add .
+  591  git commit -m"Good Commit"
+  592  clear
+  593  git log --oneline
+  594  git log --oneline
+  595  touch bad.txt;git add .;git commit -m"bad commit"
+  596  git log --oneline
+  597  ls
+  598  git revert 900f51d
+  599  git log --oneline
+  600  git diff 29c7c30 900f51d
+  601  git diff 29c7c30 b553c34
+  602  ls
+  603  history
+  604  history
+
+
+
+
+
+
 git config
 Branching and Merging
 Working with remote repo?
