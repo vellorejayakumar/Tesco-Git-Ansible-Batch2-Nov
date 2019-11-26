@@ -1,0 +1,184 @@
+What is Ansible?
+=========================
+        Config mgmt tool.
+        Dev in PYTHON
+        From REDHAT
+        Release
+            Ansible - CMD -FREE - Community
+            Ansible Tower CMD+GUI -PAID - ENterprise
+        Latest 2.9
+        Agent Less
+        
+
+What is Config mgmt?
+=========================
+        SERVER(S) Config mgmt
+
+What is there in ONE SERVER?
+
+SOFTWARE
+    SOFTWARE
+    file
+    Services
+    Bash
+    cmd
+    ps
+    yum
+    apt
+HYPERVISIOR - Hardware
+                    CPU
+                    RAM
+                    HDD
+PEOPLE
+    USERS
+    Group
+PROCESS
+    policy
+    firewalls
+
+    ----------------------------
+    USING ANSIBLE you MANAGE A Config of it.
+                                        MULTIPLE SERVERS CONFIG.
+    
+Why Ansible?
+    Easy to LEARN, SHARE, EXTEND, DEBUG, TEST, 
+        Compare to 
+                JAVA - PYTHON  - RUBY
+    SHELL SCIPTING - BATCH SCRIPTIN.
+    ---We need a CROSS PLATFORM
+
+    IDEOMPOTENT
+    DESIRE -----> ACTUAL
+    IF DESIRE ~ ACTUAL ---> NO CHANGE
+    IF DESIRE !~ actual ---> do changes
+
+    10 sTEPS ---> 1 MINS ----> 10 MINS
+    2 sTEPS ---> 2 mINS ---> 2 MINS.
+===================================
+
+OTHER TOOLS - aNSIBLE-> pUPPET-> cHEF - 
+================================================================
+Roles in Ansible?
+================================
+Dev  - Write a ansible program
+Admin - Ops - Manager SERVERS, Apply ansible program in the server.
+===============================
+
+Architecture of Ansible.
+======================================
+Ansible Control Server(ACS)  --------> Ansible Remote Server(ARS)
+--- LINUX                               - ANY 
+--- 64 BIT                              - ANY
+--- Python 2.7                          
+                                        - LINUX Python 2.4
+                                        - Windows - PS3.X and DOTNET4
+
+                        ssh           - linux
+                        WINRM(http)  - wINDOWS
+-----------------------------------------------------------
+            pythON 3.x Is not an upgrade of 2.x
+
+What we have in ACS?                    What we have in ARS?
+- Modules                               NOTHING.
+- Playbook
+- Config
+- Inventory
+
+============================================================
+How to become a Ansible programmers?
+============================================================
+JDK ---> .JAVA              -->.JAVA(S) -> .Class(S) -- JAR --> WAR
+            -- MAIN METHOD
+            -- Variables
+            -- Condition
+            -- Looping
+            -- Operators
+            -- Methods
+
+Ansible -> .YAML(Playbook)        ---> .YAMLS(PlaybookS) --> ROLE 
+            -- MAIN METHOD
+            -- Variables
+            -- Condition
+            -- Looping
+            -- Operators
+            -- Methods
+====================================================
+13.233.74.211
+How to install Ansible?
+https://www.devopsschool.com/blog/how-to-install-ansible-in-centos-7-rhel-7/
+
+$ sudo yum install wget -y
+$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+$ yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+$ sudo rpm -i epel-release-latest-7.noarch.rpm
+$ sudo yum update -y 
+$ sudo yum install ansible -y
+$ systemctl stop firewalld
+$ systemctl disable firewalld
+===========================================
+Learning flow of Ansible
+http://devopsschool.com/tutorial/ansible/ansible-training-flow.html
+
+	using ADHOC command 
+		Do one task in ONE MACHINE(localhost)
+		Do one task in ONE REMOTE MACHINE
+		Do one task in MULTIPLE REMOTE MACHINES using Inventory
+		Do one task in MULTIPLE REMOTE MACHINES using group in Inventory
+	using Playbook(Program)
+		Do Multiple tasks(Playbook) in ONE MACHINE(localhost)
+		Do Multiple tasks(Playbook) in ONE REMOTE MACHINE
+		Do Multiple tasks(Playbook) in MULTIPLE REMOTE MACHINE using Inventory
+		Do Multiple tasks(Playbook) in MULTIPLE REMOTE MACHINE using group in Inventory
+		Do Multiple tasks(Playbook) in MULTIPLE REMOTE MACHINE using group of group in Inventory
+		Do Multiple tasks(Playbook) in MULTIPLE REMOTE MACHINE using environment directory Inventory 
+	using Role(Program)
+		Do One Role in in ONE MACHINE(localhost)
+		Do Multiple Roles in ONE REMOTE MACHINE
+		Do Multiple Roles in MULTIPLE REMOTE MACHINE using Inventory
+		Do Multiple Roles in MULTIPLE REMOTE MACHINE using group in Inventory
+		Do Multiple Roles in MULTIPLE REMOTE MACHINE using group of group in Inventory
+		Do Multiple Roles in MULTIPLE REMOTE MACHINE using environment directory Inventory
+
+
+	using ADHOC command 
+		Do one task in ONE MACHINE(localhost)
+		Do one task in ONE REMOTE MACHINE
+		Do one task in MULTIPLE REMOTE MACHINES using Inventory
+		Do one task in MULTIPLE REMOTE MACHINES using group in Inventory
+
+Project - Setup a webserver.
+
+Pshuocode 
+- Install httpd server
+- Start a httpd server
+- Create a file index.html
+- Copy a index.html to /var/www/html/
+===========================================================
+What is Modules?
+        - Would do ONE work.
+    
+How many modules 1000++
+Where to find it out?
+https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html
+https://docs.ansible.com/ansible/latest/modules/modules_by_category.html
+
+- Install httpd server  - yum
+- Start a httpd server - service
+- Create a file index.html- file
+- Copy a index.html to /var/www/html/- copy
+
+"Ansible Module for"
+Ansible Module for install package in ubuntu
+
+Basic Workflow working wth Ansible Adhoc Command.
+==================================================
+ansible localhost -m yum -a"name=httpd state=present"
+ansible localhost -m service -a"name=httpd state=started"
+ansible localhost -m file -a"name=index.html state=touch"
+ansible localhost -m copy -a"src=index.html dest=/var/www/html/"
+
+Lab 1 - 
+https://www.devopsschool.com/blog/ansible-adhoc-commands-lab-excercise-part-1/
+
+Publish at 
+https://github.com/devopsschool-lab-exercise/Tesco-Git-Ansible-Batch2-Nov
